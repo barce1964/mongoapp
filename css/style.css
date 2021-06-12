@@ -79,12 +79,12 @@ img.aligncenter {
 /* Header */
 
 #header-wrapper {
-	height: 140px;
+	height: 240px;
 }
 
 #header {
 	width: 960px;
-	height: 140px;
+	height: 240px;
 	margin: 0 auto;
 }
 
@@ -92,7 +92,7 @@ img.aligncenter {
 
 #logo {
 	width: 980px;
-	height: 50px;
+	height: 150px;
 	margin: 0px auto;
 	padding: 80px 0px 0px 0px;
 	color: #FFFFFF;
@@ -133,9 +133,10 @@ img.aligncenter {
 }
 
 .logo_img {
+	padding-top: 70px;
     display: block;
     margin: 0 auto;
-    height: 100px;
+    height: 200px;
 }
 
 /* Search */
@@ -176,9 +177,18 @@ img.aligncenter {
 /* Menu */
 
 #menu-wrapper {
+	position: fixed;
 	overflow: hidden;
 	height: 60px;
+	width: 100%;
 	background: #DA2F27;
+	opacity: 0.05;
+	transition: all 1.2s;
+}
+
+#menu-wrapper:hover {
+	transition: all 1.2s;
+	opacity: 1.0;
 }
 
 #menu {
@@ -223,10 +233,15 @@ img.aligncenter {
 /* #menu a:hover {
 } */
 
+.wrapper-page {
+	position: relative;
+}
+
 /* Weather */
 .weather{
     display: inline-block;
     position: fixed;
+	right: 40px;
 }
 
 .weather_d1 {
@@ -258,12 +273,15 @@ weather_a {
 /* Page */
 
 .news {
+	position: absolute;
     display: inline-block;
+	left: 40px;
 	/* margin: 0 auto; */
-	width: 1000px;
-    height: 200px;
+	width: 80%;
+    height: auto;
 	/* padding: 0; */
 	background-color: #FFFFFF;
+	z-index: -2;
 }
 /* 
 #page {
